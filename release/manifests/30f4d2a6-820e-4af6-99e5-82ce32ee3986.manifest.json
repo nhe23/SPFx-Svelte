@@ -1,0 +1,65 @@
+{
+  "id": "30f4d2a6-820e-4af6-99e5-82ce32ee3986",
+  "alias": "HelloSvelteWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": [
+    "SharePointWebPart"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "hello-svelte"
+      },
+      "description": {
+        "default": "hello-svelte description"
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "description": "hello-svelte"
+      }
+    }
+  ],
+  "loaderConfig": {
+    "internalModuleBaseUrls": [
+      "<!-- PATH TO CDN -->"
+    ],
+    "entryModuleId": "hello-svelte-web-part",
+    "scriptResources": {
+      "hello-svelte-web-part": {
+        "type": "path",
+        "path": "hello-svelte-web-part.js"
+      },
+      "HelloSvelteWebPartStrings": {
+        "type": "path",
+        "path": "HelloSvelteWebPartStrings_en-us.js"
+      },
+      "@microsoft/sp-property-pane": {
+        "type": "component",
+        "id": "f9e737b7-f0df-4597-ba8c-3060f82380db",
+        "version": "1.12.1"
+      },
+      "@microsoft/sp-lodash-subset": {
+        "type": "component",
+        "id": "73e1dc6c-8441-42cc-ad47-4bd3659f8a3a",
+        "version": "1.12.1"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b",
+        "version": "1.12.1"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0",
+        "version": "1.12.1"
+      }
+    }
+  }
+}
